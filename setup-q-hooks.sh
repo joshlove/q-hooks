@@ -1,6 +1,8 @@
 #!/bin/bash
 # Team Q Context Hooks Setup Script
 # Run this to install shared context hooks for Amazon Q
+# These run silently before each message you send to Q. This adds to the execution time for each prompt
+# They'll time out after 5 seconds by our default config, so be concise with your hooks 
 
 set -e
 
